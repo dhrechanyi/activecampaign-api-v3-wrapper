@@ -2,6 +2,7 @@
 
 namespace Hrechanyi\ActiveCampaign\Classes;
 
+use Hrechanyi\ActiveCampaign\Connector;
 
 
 class Contacts extends Connector

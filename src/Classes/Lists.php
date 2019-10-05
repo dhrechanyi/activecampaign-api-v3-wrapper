@@ -2,6 +2,8 @@
 
 namespace Hrechanyi\ActiveCampaign\Classes;
 
+use Hrechanyi\ActiveCampaign\Connector;
+
 
 class Lists extends Connector
 {

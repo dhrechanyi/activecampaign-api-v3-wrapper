@@ -3,10 +3,9 @@
     "description": "Wrapper for ActiveCampaing API v3, which allows to work with their services, using PHP",
     "type": "library",
     "require": {
-        "guzzle/guzzle": "^3.9"
+        "guzzlehttp/guzzle": "^6.3"
     },
     "require-dev": {
-        "guzzle/guzzle": "^3.9"
     },
     "license": "MIT",
     "authors": [
@@ -17,7 +16,8 @@
     ],
     "autoload": {
       "psr-4": {
-        "Hrechanyi\\ActiveCampaign\\": "src/"
+        "Hrechanyi\\ActiveCampaign\\": "src/",
+        "GuzzleHttp\\": "src/"
       }
     }
 }

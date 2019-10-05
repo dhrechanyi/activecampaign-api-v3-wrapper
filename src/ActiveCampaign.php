@@ -2,6 +2,10 @@
 
 namespace Hrechanyi\ActiveCampaign;
 
+use Hrechanyi\ActiveCampaign\Classes\Lists;
+use Hrechanyi\ActiveCampaign\Classes\Contacts;
+use Hrechanyi\ActiveCampaign\Classes\Tags;
+
 
 class ActiveCampaign
 {
