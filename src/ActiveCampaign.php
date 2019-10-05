@@ -14,4 +14,19 @@ class ActiveCampaign
 		$this->api_key = $api_key;
 	}
 
+	public function lists()
+	{
+		return new Lists($this->base_url, $this->api_key);
+	}
+
+	public function contacts()
+	{
+		return new Contacts($this->base_url, $this->api_key);
+	}
+
+	public function tags()
+	{
+		return new Tags($this->base_url, $this->api_key);
+	}
+
 }
