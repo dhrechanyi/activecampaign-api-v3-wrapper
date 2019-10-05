@@ -1,0 +1,23 @@
+{
+    "name": "hrechanyi/activecampaign-api-v3-wrapper",
+    "description": "Wrapper for ActiveCampaing API v3, which allows to work with their services, using PHP",
+    "type": "library",
+    "require": {
+        "guzzle/guzzle": "^3.9"
+    },
+    "require-dev": {
+        "guzzle/guzzle": "^3.9"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Denys Hrechanyi",
+            "email": "dhrechanyi@gmail.com"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "Hrechanyi\\ActiveCampaign\\": "src/"
+      }
+    }
+}
