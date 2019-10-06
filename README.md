@@ -1,7 +1,7 @@
 # ActiveCampaign API v3 Wrapper
 
 
-Wrapper for ActiveCampaing API v3.\
+Wrapper for ActiveCampaign API v3.\
 Allows to make calls in ActiveCampaign services and work with data, using PHP. Simple and easy to use. \
 Services available so far:
 - Lists
