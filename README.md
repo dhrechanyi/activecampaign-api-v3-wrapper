@@ -17,13 +17,13 @@ https://developers.activecampaign.com/v3/reference
 **ActiveCampaign API v3 Wrapper** is available on Packagist. Just add this line to your **composer.json** file in **require** section
 
 ```c
-"dhrechanyi/activecampaign-api-v3-wrapper": "^1.0"
+"hrechanyi/activecampaign-api-v3-wrapper": "^1.0"
 ```
 
 or open terminal window and run
 
 ```c
-composer require dhrechanyi/activecampaign-api-v3-wrapper
+composer require hrechanyi/activecampaign-api-v3-wrapper
 ```
 
 ## Usage
