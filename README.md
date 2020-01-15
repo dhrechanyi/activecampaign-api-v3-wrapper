@@ -175,7 +175,8 @@ https://developers.activecampaign.com/v3/reference#contact
 | Method | Description |
 | --- | --- |
 | get($contact_id) | Get contact by ID |
-| getByList($list_id) | Get contact by list ID |
+| getByList($list_id) | Get contacts by list ID |
+| getByTag($tag_id) | Get contacts by tag ID |
 | getByEmail($email) | Get contact by email |
 | all() | Get all contact |
 | create($params) | Create contact https://developers.activecampaign.com/reference#create-contact |

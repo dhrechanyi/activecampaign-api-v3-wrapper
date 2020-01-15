@@ -17,9 +17,13 @@ class Contacts extends Connector
 
 	public function getByList($list_id)
 	{
-		return $this->request('GET', 'contacts?listid=' . $list_id);
+		return $this->request('GET', 'contacts?listid=' . strval($list_id));
 	}
 
+	public function getByTag($tag_id)
+	{
+		return $this->request('GET', 'contacts?tagid=' . strval($tag_id));
+	}
 
 	public function getByEmail($email)
 	{
