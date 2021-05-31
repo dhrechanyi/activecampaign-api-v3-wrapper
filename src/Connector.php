@@ -1,6 +1,6 @@
 <?php
 
-namespace Hrechanyi\ActiveCampaign;
+namespace Dhrechanyi\ActiveCampaign;
 
 
 use GuzzleHttp\Client;
@@ -63,10 +63,9 @@ class Connector
 
 	protected function buildUrl($endpoint)
 	{
-		$separator 	= stripos($endpoint, '?') === false ? '?' : '&';
-		$query 		= http_build_query(array_merge($this->query_params, $this->filter_params, $this->orderby_params, $this->paginate_params));
+		$query = http_build_query(array_merge($this->query_params, $this->filter_params, $this->orderby_params, $this->paginate_params));
 
-		return $this->base_url . $endpoint . (!empty($query) ? ($separator . $query) : '');
+		return $this->base_url . $endpoint . (!empty($query) ? ((stripos($endpoint, '?') === false ? '?' : '&') . $query) : '');
 	}
 
 	protected function request($method, $endpoint, $data = [])

@@ -39,7 +39,7 @@ Wrapper allows you to chain methods and use singe instance to apply all needed f
 require 'vendor/autoload.php';
 
 // add namespace
-use Hrechanyi\ActiveCampaign\ActiveCampaign;
+use Dhrechanyi\ActiveCampaign\ActiveCampaign;
 
 // create wrapper instance
 $ac = new ActiveCampaign('YOUR_ACTIVE_CAMPAIGN_URL', 'YOUR_ACTIVE_CAMPAIGN_KEY');

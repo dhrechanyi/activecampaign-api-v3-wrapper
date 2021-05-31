@@ -1,8 +1,8 @@
 <?php
 
-namespace Hrechanyi\ActiveCampaign\Classes;
+namespace Dhrechanyi\ActiveCampaign\Classes;
 
-use Hrechanyi\ActiveCampaign\Connector;
+use Dhrechanyi\ActiveCampaign\Connector;
 
 
 class Tags extends Connector

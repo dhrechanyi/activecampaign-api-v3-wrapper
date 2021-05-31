@@ -1,8 +1,9 @@
 {
-    "name": "hrechanyi/activecampaign-api-v3-wrapper",
+    "name": "dhrechanyi/activecampaign-api-v3-wrapper",
     "description": "Wrapper for ActiveCampaing API v3, which allows to work with their services, using PHP",
     "type": "library",
     "require": {
+        "ext-json": "*",
         "guzzlehttp/guzzle": "^6.3"
     },
     "require-dev": {
@@ -16,7 +17,7 @@
     ],
     "autoload": {
       "psr-4": {
-        "Hrechanyi\\ActiveCampaign\\": "src/",
+        "Dhrechanyi\\ActiveCampaign\\": "src/",
         "GuzzleHttp\\": "src/"
       }
     }
