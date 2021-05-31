@@ -71,10 +71,22 @@ class Contacts extends Connector
 	}
 
 
+	public function getContactFieldValues($contact_id)
+    {
+        return $this->request('GET', 'contacts/' . $contact_id . '/fieldValues');
+    }
+
+
 	public function createCustomFieldValue($params)
 	{
 		return $this->request('POST', 'fieldValues', ['fieldValue' => $params]);
 	}
+
+
+    public function updateCustomFieldValue($custom_field_id, $params)
+    {
+        return $this->request('PUT', 'fieldValues/' . $custom_field_id, ['fieldValue' => $params]);
+    }
 
 
 	public function addTag($params)
