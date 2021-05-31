@@ -67,7 +67,7 @@ To retrieve all lists, call for the `->all()` method. This method should be alwa
 ```php
 $lists = $ac->lists()->all();
 ```
-_Note that be default, activecampaign api returns 20 items. To change that, you need to use `pagination()` method_
+_Note that by default, activecampaign api returns 20 items. To change that, you need to use `pagination()` method_
 
 
 ### Pagination
@@ -112,10 +112,10 @@ $ac->tags()->query(['foo' => 'bar'])->all();
 
 ### Get item by ID
 
-To access any item by it's ID, use `->get()` method.
+To access any item by it's ID, use `->get($id)` method.
 
 ```php
-// get tag with ID = 1
+// get tag with ID == 1
 $tag = $ac->tags()->get(1);
 ```
 
@@ -191,6 +191,8 @@ https://developers.activecampaign.com/v3/reference#contact
 | getTags($contact_id) | Get all contact's tags |
 | getLists($contact_id) | Get all contact's lists |
 | updateListStatus($params) | Update list status on contact https://developers.activecampaign.com/reference#update-list-status-for-contact |
+| getContactFieldValues($contact_id) | Get contact field values |
+| updateCustomFieldValue($custom_field_id, $params) | Update contact custom field value |
 
 ### Tags
 
