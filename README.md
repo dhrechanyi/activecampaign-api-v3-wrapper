@@ -7,6 +7,7 @@ Services available so far:
 - Lists
 - Contacts
 - Tags
+- Forms
 
 ## Official API documentation
 
@@ -86,7 +87,7 @@ $paginated_lists = $ac->lists()->paginate(50)->all();
 
 https://developers.activecampaign.com/v3/reference#section-ordering \
 You can sort results in needed order. Use `->orderby()` method and pass as argument an array, where key is the name of field and value is order (asc or desc).
- 
+
 ```php
 // get all contacts and sort them by email in asc order and by last name in desc order
 $contacts = $ac->contacts()->order(['email' => 'asc', 'lastName' => 'desc'])->all();

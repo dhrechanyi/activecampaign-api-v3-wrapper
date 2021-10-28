@@ -5,6 +5,7 @@ namespace Dhrechanyi\ActiveCampaign;
 use Dhrechanyi\ActiveCampaign\Classes\Lists;
 use Dhrechanyi\ActiveCampaign\Classes\Contacts;
 use Dhrechanyi\ActiveCampaign\Classes\Tags;
+use Dhrechanyi\ActiveCampaign\Classes\Forms;
 
 
 class ActiveCampaign
@@ -31,6 +32,11 @@ class ActiveCampaign
 	public function tags()
 	{
 		return new Tags($this->base_url, $this->api_key);
+	}
+
+	public function forms()
+	{
+		return new Forms($this->base_url, $this->api_key);
 	}
 
 }
